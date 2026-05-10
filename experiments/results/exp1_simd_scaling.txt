@@ -1,0 +1,15 @@
+=== Experiment 1: SIMD Scaling (constraint check) ===
+Hardware: AMD Ryzen AI 9 HX 370 (Zen 5, AVX-512, gcc -O2 -mavx2)
+
+Elements   Scalar(ns)     AVX2(ns)  Speedup
+--------   ----------     --------  -------
+       8        2.4ns        0.9ns     2.6x
+      16        4.2ns        1.0ns     4.3x
+      32        8.2ns        1.9ns     4.4x
+      64       16.2ns        4.0ns     4.1x
+     128       39.4ns       13.5ns     2.9x
+     256      112.8ns       16.4ns     6.9x
+     512      153.0ns       32.6ns     4.7x
+    1024      333.3ns       75.1ns     4.4x
+    2048      664.5ns      178.1ns     3.7x
+    4096     1530.0ns      417.5ns     3.7x
