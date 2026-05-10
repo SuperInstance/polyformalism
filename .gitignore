@@ -1,1 +1,7 @@
+*.o
+constraints_c
+constraints
+constraints_nim
 .aider*
+__pycache__/
+*.pyc
